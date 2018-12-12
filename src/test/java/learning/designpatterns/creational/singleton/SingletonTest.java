@@ -1,4 +1,4 @@
-package learning.designpatterns.creational;
+package learning.designpatterns.creational.singleton;
 
 import org.junit.Test;
 
