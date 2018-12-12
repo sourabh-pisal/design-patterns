@@ -6,10 +6,10 @@ class Singleton {
     }
 
     static Singleton getInstance() {
-        return SingletonFactory.instance;
+        return SingletonHolder.instance;
     }
 
-    private static class SingletonFactory {
+    private static class SingletonHolder {
         private static final Singleton instance = new Singleton();
     }
 }
