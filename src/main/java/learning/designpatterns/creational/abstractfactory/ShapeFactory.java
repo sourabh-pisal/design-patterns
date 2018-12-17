@@ -10,11 +10,11 @@ public class ShapeFactory implements AbstractFactory {
     public Shape getShape(String shape) {
         switch (shape) {
             case "Rectangle":
-                new Rectangle();
+                return new Rectangle();
             case "Circle":
-                new Circle();
+                return new Circle();
             case "Triangle":
-                new Triangle();
+                return new Triangle();
             default:
                 throw new IllegalArgumentException(format(INVALID_SHAPE_MSG, shape));
         }

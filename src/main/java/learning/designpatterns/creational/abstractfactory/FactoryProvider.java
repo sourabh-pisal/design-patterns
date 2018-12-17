@@ -2,11 +2,11 @@ package learning.designpatterns.creational.abstractfactory;
 
 import static java.lang.String.format;
 
-public class FactoryProvider {
+class FactoryProvider {
 
     private static final String INVALID_CHOICE_MSG = "Invalid Choice %s";
 
-    AbstractFactory getFactory(String choice) {
+    static AbstractFactory getFactory(String choice) {
         switch (choice) {
             case "Shape":
                 return new ShapeFactory();
